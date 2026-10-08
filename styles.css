@@ -1,0 +1,129 @@
+/* --- Global --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* --- Shared Buttons --- */
+.btn-primary {
+  background-color: #4f6f52;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 8px 16px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-card {
+  background-color: #4f6f52;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- Header & Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #ffffff;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+}
+
+header .user-actions a,
+header .user-actions span {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* --- Hero Section --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #eaeaea;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero .badge {
+  background-color: #d9e3d8;
+  color: #2e5339;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.hero-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #4f6f52;
+}
