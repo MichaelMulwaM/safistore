@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div>SafiStore</div>
+        <div class="logo">SafiStore</div>
         <nav>
             <a href="#">HOME</a>
             <a href="#">PRODUCTS</a>
@@ -17,306 +17,317 @@
             <a href="#">ABOUT US</a>
             <a href="#">CONTACT</a>
         </nav>
-        <main>
-            <section>
-                <div>
-                    <span>🌱 100% Sustainable Products</span>
-                    <h1>Natural Products for Conscious Living</h1>
-                    <p>Thoughtfully crafted eco-friendly essentials, made from natural materials for everyday use.</p>
-                    <button>Shop Eco Collection</button>
-                    <a href="#">View product details &rarr;</a>
+        <div class="user-actions">
+            <a href="#">Login/Register</a>
+            <span>🔍</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">🌱 100% Sustainable Products</span>
+                <h1>Natural Products for Conscious Living</h1>
+                <p>Thoughtfully crafted eco-friendly essentials, made from natural materials for everyday use.</p>
+                <button class="btn-primary">Shop Eco Collection</button>
+                <a href="#" class="hero-link">View product details &rarr;</a>
+            </div>
+            <div class="hero-image">
+                <img src="" alt="Safi Eco Bottles">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <div class="icon">🚚</div>
+                <h3>Free Estate Delivery</h3>
+                <p>On all orders over KES 3,000 across Nairobi estates</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">⚙️</div>
+                <h3>Eco Certified</h3>
+                <p>100% Sustainably Made & Locally Sourced</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">💰</div>
+                <h3>Simplified Ordering</h3>
+                <p>Request direct via Form or WhatsApp</p>
+            </div>
+        </section>
+
+        <!-- Product Cards -->
+        <section class="products-section">
+            <h2>Most Loved Eco Products</h2>
+            <p class="subtitle">Discover our top picks for a greener lifestyle.</p>
+
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <article class="product-card">
+                    <span class="tag">Best Seller</span>
+                    <img src="" alt="Handwoven Kiondo">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Handwoven Kiondo</h3>
+                    <p class="price">KES 2,440.00 <del>KES 3,000.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="product-card">
+                    <img src="" alt="Wooden Utensils">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Wooden Utensils</h3>
+                    <p class="price">KES 1,300.00 <del>KES 1,500.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="product-card">
+                    <img src="" alt="Beeswax Food Wraps">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Beeswax Food Wraps</h3>
+                    <p class="price">KES 1,400.00 <del>KES 2,000.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="product-card">
+                    <img src="" alt="Eco-Briquettes">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Eco-Briquettes</h3>
+                    <p class="price">KES 800.00 <del>KES 1,200.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="product-card">
+                    <span class="tag">Best Seller</span>
+                    <img src="" alt="Organic Soap Bars">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Organic Soap Bars</h3>
+                    <p class="price">KES 400.00 <del>KES 600.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="product-card">
+                    <img src="" alt="Reusable Cotton Towels">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Reusable Cotton Towels</h3>
+                    <p class="price">KES 1,400.00 <del>KES 1,800.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="product-card">
+                    <img src="" alt="Bamboo Toothbrushes">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Bamboo Toothbrushes</h3>
+                    <p class="price">KES 1,400.00 <del>KES 2,000.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="product-card">
+                    <img src="" alt="Canvas Market Totes">
+                    <span class="eco-badge">🌱 Eco Certified</span>
+                    <h3>Canvas Market Totes</h3>
+                    <p class="price">KES 800.00 <del>KES 1,200.00</del></p>
+                    <div class="card-actions">
+                        <button class="btn-card">Inquire / Order</button>
+                        <a href="#">View Details &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlight">
+            <h2>Spotlight</h2>
+            <div class="spotlight-grid">
+                <div class="spotlight-large">
+                    <div class="spotlight-info">
+                        <h3>Canvas Totes</h3>
+                        <p>UP TO 60% OFF</p>
+                        <button class="btn-secondary">Shop Now</button>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="Safi Eco Bottles">
-                </div>
-            </section>
-
-            <section>
-                <div>
-                    <div>🚚</div>
-                    <h3>Free Estate Delivery</h3>
-                    <p>On all orders over KES 3,000 across Nairobi estates</p>
-                </div>
-                <div>
-                    <div>⚙️</div>
-                    <h3>Eco Certified</h3>
-                    <p>100% Sustainably Made & Locally Sourced</p>
-                </div>
-                <div>
-                    <div>💰</div>
-                    <h3>Simplified Ordering</h3>
-                    <p>Request direct via Form or WhatsApp</p>
-                </div>
-            </section>
-
-            <section>
-                <h2>Most Loved Eco Products</h2>
-                <p>Discover our top picks for a greener lifestyle.</p>
-
-                <div>
-
-                    <!-- Card 1 -->
-                    <article>
-                        <span>Best Seller</span>
-                        <img src="" alt="Handwoven Kiondo">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Handwoven Kiondo</h3>
-                        <p>KES 2,440.00 <del>KES 3,000.00</del></p>
+                <div class="spotlight-small-group">
+                    <div class="spotlight-small">
                         <div>
-                            <button">Inquire / Order</button>
-                                <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 2 -->
-                    <article>
-                        <img src="" alt="Wooden Utensils">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Wooden Utensils</h3>
-                        <p>KES 1,300.00 <del>KES 1,500.00</del></p>
-                        <div>
-                            <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 3 -->
-                    <article>
-                        <img src="" alt="Beeswax Food Wraps">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Beeswax Food Wraps</h3>
-                        <p>KES 1,400.00 <del>KES 2,000.00</del></p>
-                        <div>
-                            <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 4 -->
-                    <article>
-                        <img src="" alt="Eco-Briquettes">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Eco-Briquettes</h3>
-                        <p>KES 800.00 <del>KES 1,200.00</del></p>
-                        <div>
-                            <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 5 -->
-                    <article>
-                        <span>Best Seller</span>
-                        <img src="" alt="Organic Soap Bars">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Organic Soap Bars</h3>
-                        <p>KES 400.00 <del>KES 600.00</del></p>
-                        <div>
-                            <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 6 -->
-                    <article>
-                        <img src="" alt="Reusable Cotton Towels">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Reusable Cotton Towels</h3>
-                        <p>KES 1,400.00 <del>KES 1,800.00</del></p>
-                        <div <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 7 -->
-                    <article>
-                        <img src="" alt="Bamboo Toothbrushes">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Bamboo Toothbrushes</h3>
-                        <p>KES 1,400.00 <del>KES 2,000.00</del></p>
-                        <div>
-                            <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 8 -->
-                    <article>
-                        <img src="" alt="Canvas Market Totes">
-                        <span>🌱 Eco Certified</span>
-                        <h3>Canvas Market Totes</h3>
-                        <p>KES 800.00 <del>KES 1,200.00</del></p>
-                        <div>
-                            <button>Inquire / Order</button>
-                            <a href="#">View Details &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section>
-                <h2>Spotlight</h2>
-                <div>
-                    <div>
-                        <div>
-                            <h3>Canvas Totes</h3>
+                            <h3>Bamboo Toothbrushes</h3>
                             <p>UP TO 60% OFF</p>
-                            <button>Shop Now</button>
+                            <button class="btn-secondary">Shop Now</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="spotlight-small">
                         <div>
-                            <div>
-                                <h3>Bamboo Toothbrushes</h3>
-                                <p>UP TO 60% OFF</p>
-                                <button>Shop Now</button>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h3>Reusable Eco Friendly Bags</h3>
-                                <p>UP TO 60% OFF</p>
-                                <button>Shop Now</button>
-                            </div>
+                            <h3>Reusable Eco Friendly Bags</h3>
+                            <p>UP TO 60% OFF</p>
+                            <button class="btn-secondary">Shop Now</button>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <h2>Impact Metrics Banner</h2>
+        <!-- Impact Metrics Banner -->
+        <section class="impact-metrics">
+            <h2>Impact Metrics Banner</h2>
+            <div class="metrics-grid">
                 <div>
-                    <div>
-                        <h3>500+</h3>
-                        <p>Local Vendors Listed</p>
-                    </div>
-                    <div>
-                        <h3>5,000+</h3>
-                        <p>Reusable Bags Sold</p>
-                    </div>
-                    <div>
-                        <h3>3,000kg</h3>
-                        <p>of Charcoal Alternatives</p>
-                    </div>
+                    <h3>500+</h3>
+                    <p>Local Vendors Listed</p>
                 </div>
-            </section>
-
-            <section>
-                <h2>Exclusive Offers</h2>
-                <p>Save big on your favorite eco products.</p>
                 <div>
-                    <div>
-                        <img src="" alt="Bamboo Deodorant">
-                    </div>
-                    <div>
-                        <span>Limited Time</span>
-                        <h3>Bamboo Deodorant</h3>
-                        <p>Buy 1, Get 1 50% Off</p>
-                        <button>Shop Now</button>
-                    </div>
-                    <div>
-                        <span>25%</span>
-                        <span>OFF</span>
-                    </div>
+                    <h3>5,000+</h3>
+                    <p>Reusable Bags Sold</p>
                 </div>
-            </section>
-
-            <!-- Customer Reviews Section -->
-            <section>
-                <h2>Hear From Our Customers</h2>
-                <p>See why eco-conscious customers love us.</p>
                 <div>
-                    <article>
-                        <div>“</div>
-                        <p>I love everything I've ordered from Safi Market. The quality is excellent and I feel good
-                            knowing my
-                            purchases support local artisans.</p>
-                        <div>
-                            <div></div>
-                            <div>
-                                <h4>Emily R.</h4>
-                                <p>Verified Buyer</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div>“</div>
-                        <p>I love everything I've ordered from Safi Market. The quality is excellent and I feel good
-                            knowing my
-                            purchases support local artisans.</p>
-                        <div>
-                            <div></div>
-                            <div>
-                                <h4>Emily R.</h4>
-                                <p>Verified Buyer</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div>“</div>
-                        <p>I love everything I've ordered from Safi Market. The quality is excellent and I feel good
-                            knowing my
-                            purchases support local artisans.</p>
-                        <div>
-                            <div></div>
-                            <div>
-                                <h4>Emily R.</h4>
-                                <p>Verified Buyer</p>
-                            </div>
-                        </div>
-                    </article>
+                    <h3>3,000kg</h3>
+                    <p>of Charcoal Alternatives</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </main>
+        <!-- Exclusive Offers -->
+        <section class="exclusive-offer">
+            <h2>Exclusive Offers</h2>
+            <p class="subtitle">Save big on your favorite eco products.</p>
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="" alt="Bamboo Deodorant">
+                </div>
+                <div class="offer-text">
+                    <span class="tag">Limited Time</span>
+                    <h3>Bamboo Deodorant</h3>
+                    <p>Buy 1, Get 1 50% Off</p>
+                    <button class="btn-primary">Shop Now</button>
+                </div>
+                <div class="offer-discount">
+                    <span>25%</span>
+                    <span>OFF</span>
+                </div>
+            </div>
+        </section>
 
-          <footer>
-    <div>
-      <div>
-        <h3>🌱 SafiStore</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-        <div><span>f</span> <span>i</span> <span>in</span> <span>y</span></div>
-      </div>
-      <div>
-        <h4>Shop</h4>
-        <ul>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">Eco Tips</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Shipping Info</a></li>
-          <li><a href="#">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Return Policy</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Conventions</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <input type="email" placeholder="support@safimart.com">
-        <button>Subscribe Now</button>
-      </div>
-    </div>
-    <div>
-      <p>&copy; 2026 SafiStore. All rights reserved.</p>
-    </div>
-  </footer>
+        <!-- Customer Reviews Section -->
+        <section class="testimonials">
+            <h2>Hear From Our Customers</h2>
+            <p class="subtitle">See why eco-conscious customers love us.</p>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p>I love everything I've ordered from Safi Market. The quality is excellent and I feel good knowing
+                        my
+                        purchases support local artisans.</p>
+                    <div class="user-info">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Emily R.</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p>I love everything I've ordered from Safi Market. The quality is excellent and I feel good knowing
+                        my
+                        purchases support local artisans.</p>
+                    <div class="user-info">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Emily R.</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p>I love everything I've ordered from Safi Market. The quality is excellent and I feel good knowing
+                        my
+                        purchases support local artisans.</p>
+                    <div class="user-info">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Emily R.</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>🌱 SafiStore</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="socials"><span>f</span> <span>i</span> <span>in</span> <span>y</span></div>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Eco Tips</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Conventions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <input type="email" placeholder="support@safimart.com">
+                <button class="btn-primary">Subscribe Now</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 SafiStore. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 
