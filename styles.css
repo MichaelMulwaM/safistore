@@ -227,45 +227,9 @@ header .cart-but span {
   color: #666666;
 }
 
-/* --- Spotlight Section --- */
-.spotlight {
-  padding: 40px 80px;
-}
-
-.spotlight-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.spotlight-large {
-  background-color: #d2c8be;
-  height: 320px;
-  border-radius: 8px;
-  padding: 30px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.spotlight-small-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.spotlight-small {
-  background-color: #e3e0db;
-  height: 150px;
-  border-radius: 8px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
 /* --- Impact Banner --- */
 .impact-metrics {
-  padding: 50px 80px;
+  padding: 40px 80px 10px 80px;
   text-align: center;
 }
 
@@ -287,7 +251,7 @@ header .cart-but span {
 
 /* --- Exclusive Offers --- */
 .exclusive-offer {
-  padding: 40px 80px;
+  padding: 1px 80px 20px 80px;
 }
 
 .offer-card {
@@ -348,13 +312,6 @@ header .cart-but span {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.testimonial-card .avatar {
-  width: 35px;
-  height: 35px;
-  background-color: #cccccc;
-  border-radius: 50%;
 }
 
 .testimonial-card h4 {
@@ -583,3 +540,4 @@ header .cart-but a, header .cart-but span {
   background-color: #e0e0e0;
   margin: 35px 0;
 }
+
