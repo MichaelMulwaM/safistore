@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafiStore - Eco Blog & Guides</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .blog-list { max-width: 800px; margin: 0 auto; padding: 1rem; }
-        .blog-post { display: flex; gap: 2rem; margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid #e0e0e0; align-items: center; }
-        .blog-post img { width: 250px; height: 160px; object-fit: cover; border-radius: 6px; background-color: #f0f0f0; }
-        .blog-content h3 { margin-bottom: 0.5rem; font-size: 1.4rem; }
-        .blog-content p { color: #555; margin-bottom: 1rem; }
-        .blog-meta { font-size: 0.85rem; color: #888; margin-bottom: 0.5rem; display: block; }
-        @media (max-width: 768px) { 
-            .blog-post { flex-direction: column; align-items: flex-start; } 
-            .blog-post img { width: 100%; height: 200px; } 
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafiStore - Eco Blog & Guides</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .blog-list {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .blog-post {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #e0e0e0;
+      align-items: center;
+    }
+
+    .blog-post img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      background-color: #f0f0f0;
+    }
+
+    .blog-content h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .blog-content p {
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .blog-meta {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .blog-post {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .blog-post img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <header>
@@ -28,7 +71,7 @@
       <a href="products.html">PRODUCTS</a>
       <a href="blog.html" class="active">BLOGS</a>
       <a href="aboutus.html">ABOUT US</a>
-      <a href="#">CONTACT</a>
+      <a href="contactus.html">CONTACT US</a>
     </nav>
     <div class="cart-but">
       <a href="login.html">Login/Register</a>
@@ -37,7 +80,7 @@
   </header>
 
   <main class="catalog-container">
-    
+
     <div class="category-header" style="text-align: center; margin: 2rem auto 3rem auto;">
       <h2 style="font-size: 35px;">Safi Living & Eco Guides</h2>
       <p>Practical tips, artisan stories, and zero-waste guides for everyday life.</p>
@@ -51,7 +94,8 @@
         <div class="blog-content">
           <span class="blog-meta">October 11, 2026 • 4 min read</span>
           <h3>5 Easy Ways to Transition to a Zero-Waste Kitchen</h3>
-          <p>Simple swaps like beeswax wraps, wooden utensils, and glass storage jars that drastically cut down household plastic waste.</p>
+          <p>Simple swaps like beeswax wraps, wooden utensils, and glass storage jars that drastically cut down
+            household plastic waste.</p>
           <a href="#">Read Full Article &rarr;</a>
         </div>
       </article>
@@ -62,7 +106,8 @@
         <div class="blog-content">
           <span class="blog-meta">October 5, 2026 • 6 min read</span>
           <h3>The Craft Behind the Traditional Handwoven Kiondo</h3>
-          <p>Discover how local Kenyan artisans turn natural sisal fibers into durable, heritage shopping bags built to last a lifetime.</p>
+          <p>Discover how local Kenyan artisans turn natural sisal fibers into durable, heritage shopping bags built to
+            last a lifetime.</p>
           <a href="#">Read Full Article &rarr;</a>
         </div>
       </article>
@@ -73,7 +118,8 @@
         <div class="blog-content">
           <span class="blog-meta">September 28, 2026 • 3 min read</span>
           <h3>How to Care for Your Wooden & Bamboo Items</h3>
-          <p>Extend the lifespan of your plastic-free personal care and kitchen items with these simple maintenance and drying tips.</p>
+          <p>Extend the lifespan of your plastic-free personal care and kitchen items with these simple maintenance and
+            drying tips.</p>
           <a href="#">Read Full Article &rarr;</a>
         </div>
       </article>
@@ -82,23 +128,24 @@
 
   </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.x.com/" target="_blank" aria-label="Twitter">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2026 SafiStore. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.x.com/" target="_blank" aria-label="Twitter">
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 SafiStore. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
