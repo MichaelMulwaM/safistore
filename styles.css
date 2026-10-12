@@ -67,7 +67,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding: 15px 20px 15px 20px;
   background-color: #ffffff;
 }
 
@@ -423,26 +423,6 @@ a {
 }
 
 /* --- Header / Navigation --- */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 80px;
-  background-color: #ffffff;
-}
-
-header .logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-header nav a {
-  margin: 0 15px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #555555;
-}
-
 header .cart-but a, header .cart-but span {
   margin-left: 15px;
   font-size: 14px;
@@ -452,7 +432,7 @@ header .cart-but a, header .cart-but span {
 .catalog-container {
   display: flex;
   flex-direction: column;
-  padding: 40px 60px;
+  padding:20px 40px 10px 40px
 }
 
 /* Top Category Navigation Bar */
