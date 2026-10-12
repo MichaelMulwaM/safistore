@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SafiStore - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .about-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .about-section h3 {
+            margin-bottom: 0.75rem;
+            color: #2e7d32;
+        }
+
+        .about-section p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .value-card {
+            background: #2e7d32;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .value-card h4 {
+            color: rgb(0, 0, 0);
+        }
+
+        .value-card p {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    </style>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="logo">SafiStore</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="blog.html">BLOGS</a>
+            <a href="about.html" class="active">ABOUT US</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="cart-but">
+            <a href="#">Login/Register</a>
+            <span>Cart</span>
+        </div>
+    </header>
+
+    <main class="catalog-container">
+        <div class="category-header" style="text-align: center; margin: 2rem auto 3rem auto; width: 100%;">
+            <h2 style="text-align: center;">About SafiStore</h2>
+            <p style="text-align: center;">Empowering sustainable living and local craftsmanship across Kenya.</p>
+        </div>
+
+        <div class="about-container">
+
+            <section class="about-section">
+                <h3>Our Mission</h3>
+                <p>At SafiStore, we believe that everyday choices have a lasting impact. Our mission is to make
+                    sustainable, plastic-free living accessible by offering durable, handcrafted alternatives that
+                    replace single-use plastics in Kenyan households.</p>
+            </section>
+
+            <section class="about-section">
+                <h3>Our Roots & Craftsmanship</h3>
+                <p>Founded with a passion for environmental conservation, we partner directly with local Kenyan artisans
+                    and weavers. From traditional handwoven kiondos to natural sisal scrubbers and organic kitchenware,
+                    every product tells a story of heritage, skill, and environmental responsibility.</p>
+            </section>
+            
+            <section class="about-section">
+                <h3>Why Choose Us?</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h4>100% Eco-Friendly</h4>
+                        <p>Carefully sourced natural materials designed to minimize waste and protect our environment.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Local Artisans</h4>
+                        <p>Supporting community weavers and local makers by promoting authentic Kenyan craftsmanship.
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Built to Last</h4>
+                        <p>Durable, high-quality alternatives built to replace disposable items for years to come.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+        <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Twitter">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 SafiStore. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

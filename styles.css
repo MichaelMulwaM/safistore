@@ -83,8 +83,8 @@ header nav a {
   color: #555555;
 }
 
-header .user-actions a,
-header .user-actions span {
+header .cart-but a,
+header .cart-but span {
   margin-left: 15px;
   font-size: 14px;
 }
@@ -370,45 +370,236 @@ header .user-actions span {
 /* --- Footer --- */
 footer {
   background-color: #ededed;
-  padding: 60px 80px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.footer-brand p {
-  font-size: 13px;
-  color: #666666;
-  margin: 15px 0;
-}
-
-footer h4 {
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
-footer ul li {
-  margin-bottom: 8px;
-  font-size: 13px;
-  color: #666666;
-}
-
-footer input {
-  padding: 10px;
-  width: 100%;
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centers the social icons */
+  align-items: center;
   margin-bottom: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-links a {
+  color: #2e7d32; /* Theme green color */
+  font-size: 20px; /* Slightly larger since they are the main focus */
+  transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
 }
 
 .copyright {
   text-align: center;
-  border-top: 1px solid #dddddd;
-  padding-top: 20px;
+  border-top: 0px solid #dddddd;
+  padding-top: 0px;
   font-size: 12px;
   color: #888888;
+}
+
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Header / Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #ffffff;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+}
+
+header .cart-but a, header .cart-but span {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* --- Catalog Page Layout --- */
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+
+/* Top Category Navigation Bar */
+.category-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.category-top-bar h3 {
+  font-size: 16px;
+  color: #333333;
+}
+
+.category-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.category-list a {
+  font-size: 14px;
+  color: #555555;
+}
+
+.category-list a.active {
+  font-weight: bold;
+  color: #4f6f52;
+}
+
+/* Category Sections */
+.category-block {
+  margin-bottom: 30px;
+}
+
+.category-header h2 {
+  text-align: left;
+  font-size: 22px;
+  color: #2e5339;
+}
+
+.category-header p {
+  color: #666666;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+/* 4-Column Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* --- Product Cards --- */
+.product-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-card .tag {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: #f1e4d3;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.product-card .eco-badge {
+  font-size: 11px;
+  color: #777777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product-card .price del {
+  color: #aaaaaa;
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-card {
+  background-color: #4f6f52;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-actions a {
+  font-size: 11px;
+  color: #666666;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.category-footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 35px 0;
 }
