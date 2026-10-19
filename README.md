@@ -1,64 +1,73 @@
-# SafiStore Project
+# SafiStore - Sustainable Living, Delivered to Your Door
 
-Hi! Welcome to my SafiStore project. I am a junior web development student, and this is my portfolio project built with HTML5 and CSS3.
-
----
-
-## Project Overview
-
-SafiStore is a minimalist, eco-friendly e-commerce website designed to showcase sustainable, locally sourced products in Kenya. The main goal of this project was to build a multi-page web application focusing on clean code, green branding, and practical shopping layouts, including:
-
-* Multi-Page Architecture: Connecting Home, Products, About Us, Contact, and Login pages seamlessly.
-* Grid Section: Featuring background product imagery with absolute text positioning and responsive overlays.
-* Product Catalog: Structured across three key categories (Reusable Shopping, Kitchen & Dining, and Personal Care), complete with KES pricing and discounted strike-through tags (<del>).
-* Minimalist UI Components: Includes a side-by-side login page, a structured contact page, and a clean Flexbox footer with social media icons.
+SafiStore is a multi-page e-commerce website designed to showcase local, sustainable, and eco-friendly products across Kenya. Built with semantic HTML5 and clean CSS3, the platform offers a seamless browsing experience for conscious consumers seeking plastic-free alternatives for daily living.
 
 ---
 
-## Key Technical Features
+## The Problem
 
-* CSS Flexbox & Grid Layouts:
-  * Flexbox: Used in the navigation header, footer, alignment controls, and form structures.
-  * CSS Grid: Applied across the product catalog and spotlight sections to ensure fluid responsiveness.
-* Background Image Positioning: Utilized background-size: cover combined with absolute positioning to overlay text cleanly over product photography.
-* Semantic HTML Markup: Built using modern structural elements (<header>, <nav>, <section>, <main>, <footer>).
-* Typography & Units: Maintained consistent scaling using rem units and styled with a signature green theme.
+Single-use plastics and non-biodegradable household goods contribute significantly to environmental degradation and waste in urban Kenya. While local artisans and eco-conscious vendors produce sustainable alternatives—such as handwoven kiondos, bamboo toothbrushes, beeswax wraps, and organic soaps—consumers often struggle to find a centralized, accessible digital marketplace to discover and order these goods directly.
+
+## Target Audience
+
+* **Eco-Conscious Consumers:** Individuals in Nairobi and across Kenya looking to reduce their environmental footprint by adopting plastic-free household, kitchen, and personal care products.
+* **Local Kenyan Artisans & Vendors:** Eco-friendly craftsmen, weavers, and small businesses seeking an online marketplace to reach a wider customer base.
+* **Everyday Shoppers:** Consumers seeking high-quality, durable, and locally crafted artisanal items with transparent pricing and convenient estate delivery options.
 
 ---
 
-## File & Folder Structure
+## Pages & Site Architecture
 
-```text
-/safi-store
-├── index.html        # Main landing page & spotlight section
-├── products.html     # Product catalog page
-├── about.html        # About Us page
-├── contact.html      # Contact form and details page
-├── login.html        # Authentication page
-├── styles.css        # Custom CSS stylesheet
-└── /images           # Assets folder for product and banner images
+SafiStore is built using a clean multi-page structure where each page connects seamlessly via a global header navigation and footer:
 
-How to Run the Project
-• Download or clone this repository to your local machine.
+* index.html (Home): Landing page showcasing key features, top eco-friendly products, customer reviews, and environmental impact metrics.
 
-• Ensure all HTML files, styles.css, and the images/ directory are in the same folder root.
+* products.html (Catalog): Main shop page displaying all products organized into key categories (Reusable Shopping, Kitchen & Dining, and Personal Care).
 
-• Open index.html in any modern web browser (Chrome, Firefox, Safari, Edge) to start exploring the site.
+* Category Pages (reusable.html, kitchen&dining.html, personalcare.html): Dedicated category views to filter and browse specific product collections.
 
-Concepts Learned This Week
-• Structuring multi-page websites and maintaining consistent navigation across views.
+* Product Detail Pages (item1.html, etc.): Single product pages featuring an image gallery, vendor name, description, Nairobi estate delivery selector, and direct ordering.
 
-• Applying background image properties (background-size: cover, background-position: center) for modern e-commerce card designs.
+* aboutus.html (About Us): Overview of SafiStore's eco-friendly mission and artisan community partners.
 
-• Designing functional form layouts for user registration and contact submissions.
+* contactus.html (Contact Us): Customer support info and inquiry form.
 
-• Using semantic elements like  to clearly indicate original sale prices.
+* login.html (Login): Account access page with a responsive split-screen design.
 
-Challenges & Future Enhancements
-• Spotlight Text Overlay: Getting the text and buttons to sit right on top of the background images without messing up responsiveness on smaller screens took quite a bit of trial and error with absolute positioning.
+---
 
-• Forms Don't Submit Yet: The login and contact forms are purely frontend templates and do not connect to a backend server to process submissions or messages.
+## Style Guide
 
-• Cart Functionality is Static: Clicking "Add to Cart" or interacting with cart buttons doesn't dynamically update item quantities or totals yet.
+* **Color Palette:**
+  * **Primary Brand Green:** `#4f6f52` (Buttons, active navigation links, highlighted text)
+  * **Dark Forest Green:** `#2e5339` (Section headings, badges)
+  * **Soft Olive Accent:** `#d9e3d8` / `#dbe2d8` (Offer banners, badge backgrounds)
+* **Typography:**
+  * Primary Font Stack: `Arial, sans-serif`
+  * Responsive font sizes using a combination of `px` baseline rules and custom inline/class overrides.
+* **UI Components & Layout:**
+  * **Flexbox:** Applied to header navigation, value banners, footer icon alignment, purchase actions, and offer cards.
+  * **CSS Grid:** Used for 4-column product grids, 3-column testimonial layouts, and product image thumbnail galleries.
+  * **Media Queries (`@media`):** Responsive layout adjustments for mobile screens (765px and below)
+---
 
-Created as part of Web Development Coursework by Michael Mulwa — 2026.
+## Screenshots
+
+* **Home Page:**  
+  ![Home Page](images/screenshots/homepage.jpg)
+
+* **Product Detail Page:**  
+  ![Product Detail Page](images/screenshots/products.jpg)
+
+  * **Best Sellers:**  
+  ![Product Detail Page](images/screenshots/bestsellers.jpg)
+
+---
+
+## Live Demo
+
+* **Live Site Link:** [View SafiStore Live on GitHub Pages](https://michaelmulwam.github.io/safistore/)
+
+---
+
+*Created as part of Web Development Coursework by Michael Mulwa — 2026.*
