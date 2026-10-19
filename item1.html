@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handwoven Kiondo - SafiStore</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">SafiStore</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="products.html">PRODUCTS</a>
+      <a href="blog.html">BLOG</a>
+      <a href="aboutus.html">ABOUT US</a>
+      <a href="contactus.html">CONTACT US</a>
+    </nav>
+    <div class="cart-but">
+      <a href="login.html">Login</a>
+      <span>Cart</span>
+    </div>
+  </header>
+
+  <main class="catalog-container">
+
+    <nav class="breadcrumb" style="font-size: 13px; color: #666666; margin-bottom: 20px;">
+      <a href="index.html">Home</a> &gt; <a href="products.html">Products</a> &gt; <span>Handwoven Kiondo</span>
+    </nav>
+
+    <section class="single-product-section"
+      style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: #ffffff; padding: 40px; border-radius: 8px;">
+
+      <div class="product-gallery">
+        <div class="main-img"
+          style="margin-bottom: 15px; background-color: #f9f9f9; border-radius: 6px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="images/kiondomini.jpg" alt="Handwoven Kiondo Main View"
+            style="width: 100%; height: 400px; object-fit: cover; border-radius: 6px;">
+        </div>
+        <div class="thumbnail-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+          <img src="images/kiondomini.jpg" alt="Kiondo Thumbnail 1"
+            style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 2px solid #4f6f52;">
+          <img src="images/kiondo2.jpg" alt="Kiondo Thumbnail 2"
+            style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+          <img src="images/kiondo3.jpg" alt="Kiondo Thumbnail 3"
+            style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+          <img src="images/kiondo4.jpg" alt="Kiondo Thumbnail 4"
+            style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+        </div>
+      </div>
+
+      <div class="product-details-info">
+        <span class="eco-badge"
+          style="background-color: #f1e4d3; font-size: 11px; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;">Eco
+          Certified</span>
+        <h1 style="font-size: 26px; margin: 5px 0;">Handwoven Kiondo</h1>
+        <p class="vendor-name" style="font-size: 13px; color: #666666; margin-bottom: 15px;">
+          Vendor: <span style="font-weight: bold; color: #4f6f52;">Kitui Basketry Co-op</span>
+        </p>
+
+        <p class="price" style="font-size: 20px; font-weight: bold; margin-bottom: 15px;">
+          KES 2,440.00 <del style="color: #aaaaaa; font-weight: normal; font-size: 14px; margin-left: 8px;">KES
+            3,000.00</del>
+        </p>
+
+        <p class="description" style="font-size: 14px; color: #555555; line-height: 1.6; margin-bottom: 20px;">
+          A versatile, durable masterpiece handwoven by local artisans using sustainably sourced natural fibers. Perfect
+          as an everyday market bag, stylish handbag, or unique home storage basket.
+        </p>
+        </p>
+
+        <div class="product-features" style="margin-bottom: 20px;">
+          <h3 style="font-size: 15px; margin-bottom: 10px; color: #333333;">Product Features:</h3>
+          <ul
+            style="font-size: 13px; color: #666666; padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 6px;">
+            <li>100% natural, biodegradable plant fibers</li>
+            <li>Handcrafted by local Kenyan women artisans</li>
+            <li>Sturdy reinforced handles for heavy everyday loads</li>
+            <li>Chemical-free natural dyes</li>
+          </ul>
+        </div>
+
+        <div class="estate-selector" style="margin-bottom: 20px;">
+          <label for="nairobi-estate"
+            style="font-size: 13px; font-weight: bold; display: block; margin-bottom: 5px; color: #333333;">Select
+            Delivery Estate (Nairobi):</label>
+          <select id="nairobi-estate"
+            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; background-color: #fff;">
+            <option value="">-- Choose your estate / neighborhood --</option>
+            <option value="westlands">Westlands / Parklands</option>
+            <option value="kilimani">Kilimani / Kileleshwa</option>
+            <option value="cbd">Nairobi CBD / Ngara</option>
+            <option value="lavington">Lavington / Loresho</option>
+            <option value="kasarani">Kasarani / Roasters</option>
+            <option value="embakasi">Embakasi / Utawala</option>
+            <option value="langata">Lang'ata / Karen</option>
+            <option value="thika-rd">Roysambu / Kahawa Sukari</option>
+            <option value="other">Other Nairobi Estate</option>
+          </select>
+        </div>
+
+        <div class="purchase-actions" style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
+          <div class="quantity-selector">
+            <label for="qty" style="font-size: 13px; display: block; margin-bottom: 5px;">Qty:</label>
+            <input type="number" id="qty" value="1" min="1"
+              style="width: 60px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; text-align: center;">
+          </div>
+          <div style="flex-grow: 1;">
+            <button class="btn-primary"
+              style="width: 100%; padding: 12px; margin-top: 18px; font-size: 14px; font-weight: bold; cursor: pointer;">Order</button>
+          </div>
+        </div>
+
+        <p style="font-size: 12px; color: #777777;">Free Estate Delivery across Nairobi on orders over KES 3,000.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content" style="display: flex; justify-content: center; align-items: center; width: 100%;">
+      <div class="social-links" style="display: flex; gap: 20px; align-items: center;">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.x.com/" target="_blank" aria-label="Twitter">
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="copyright" style="text-align: center; margin-top: 10px;">
+      <p>&copy; 2026 SafiStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
